@@ -1,5 +1,4 @@
 # Speakify
-<<<<<<< HEAD
 
 Hindi YouTube videos → Romanized phonetic captions (Hinglish).
 
@@ -58,6 +57,3 @@ cp server/.env.example server/.env
 - **Captions:** `youtube-transcript` (free, no API key)
 - **Transliteration:** `sanscript` (free, local)
 - **Whisper fallback:** OpenAI `whisper-1` (paid, optional)
-=======
-Hindi YouTube videos → Romanized phonetic captions
->>>>>>> 98c18f704a6c182f659eb29a517eece3745ed4fe
