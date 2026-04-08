@@ -1,0 +1,31 @@
+@keyframes lineIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+@keyframes wordGlow {
+  0%   { text-shadow: 0 0 8px  var(--accent-glow); }
+  50%  { text-shadow: 0 0 20px var(--accent-glow), 0 0 40px rgba(240,160,48,0.2); }
+  100% { text-shadow: 0 0 8px  var(--accent-glow); }
+}
+
+.caption-utterance {
+  animation: lineIn 0.2s ease both;
+}
+
+.syl {
+  display: inline;
+  transition: color 0.1s ease;
+  color: var(--text-3);
+}
+.syl.spoken {
+  color: var(--text-2);
+}
+.syl.active {
+  color: var(--accent);
+  font-weight: 600;
+  animation: wordGlow 0.8s ease-in-out infinite;
+}
+
+.word-group { display: inline; }
+.word-group + .word-group::before { content: ' '; }
